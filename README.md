@@ -17,7 +17,7 @@
 
 ## 📸 Preview
 
-| 3D Model Hero | Flipping Event Cards | Video Registration |
+| 3D Model Hero | Flipping Event Cards | Video Animation |
 |:---:|:---:|:---:|
 | ![3D Queen Model](infinity-club/src/assets/3D%20model.png) | ![Flipping Cards](infinity-club/src/assets/flipping%20cards.png) | ![Video Transformation](infinity-club/src/assets/vid%20transformation.png) |
 
@@ -30,7 +30,7 @@
 ## ✨ Features
 
 - ♾️ **Hand-crafted 3D Queen** — fully modeled, textured, and animated in Blender, brought to life via Three.js
-- 🎬 **Pawn-to-Queen Transformation** — custom-rendered video honoring the club's motto on skill promotion
+- 🎬 **Pawn-to-Queen Transformation** — a video honoring the club's motto on skill promotion
 - 🃏 **Flipping Event Cards** — CSS 3D card flip revealing event details on hover
 - 📋 **Member Registration** — form with live validation, persisted to Supabase
 - 📱 **Fully Responsive** — fluid layout across desktop, tablet, and mobile
@@ -54,10 +54,8 @@
 
 ## ⚙️ Technical Highlights
 
-- 🧊 **Built from scratch in Blender** — queen piece fully sculpted, UV-unwrapped, textured, and animated before export
+- 🧊 **Built from scratch in Blender** — queen piece fully sculpted, textured, and animated before export
 - 🔁 **Blender → Three.js pipeline** — GLB loaded via `GLTFLoader` with `AnimationMixer` loop and recalculated vertex normals
-- 🎥 **Custom pawn video** — dedicated Blender transformation animation embedded alongside the registration form
-- 🔄 **GLB fallback chain** — silent fallback from `queen1.glb` to `queen.glb` ensuring zero broken 3D states
 - 📐 **ResizeObserver** — dynamic canvas resize handling that avoids Three.js aspect ratio distortion
 - 🛡️ **Resilient registration** — safe Supabase submission with fallback client notifications
 
@@ -66,7 +64,7 @@
 ## 🚀 Running Locally
 
 ```bash
-git clone https://github.com/your-org/infinity-club.git
+git clone https://github.com/alaebenghanem/infinity-club.git
 cd infinity-club
 npm install && npm run dev
 ```
