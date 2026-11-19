@@ -29,8 +29,8 @@
 
 ## ✨ Features
 
-- ♾️ **Hand-crafted 3D Queen** — fully modeled, textured, and animated in Blender, then brought to life in the browser via Three.js
-- 🎬 **Pawn-to-Queen Transformation** — a video of a pawn promoting to a queen, echoing the club's motto *"promote your skills with us, just like a pawn promotes to a queen"*
+- ♾️ **Hand-crafted 3D Queen** — fully modeled, textured, and animated in Blender, brought to life via Three.js
+- 🎬 **Pawn-to-Queen Transformation** — custom-rendered video honoring the club's motto on skill promotion
 - 🃏 **Flipping Event Cards** — CSS 3D card flip revealing event details on hover
 - 📋 **Member Registration** — form with live validation, persisted to Supabase
 - 📱 **Fully Responsive** — fluid layout across desktop, tablet, and mobile
@@ -54,8 +54,8 @@
 
 ## ⚙️ Technical Highlights
 
-- 🧊 **Built from scratch in Blender** — the queen piece was fully sculpted, PBR-textured and animated entirely in Blender before a single line of web code was written; exported as `.glb` with embedded textures and animation clips
-- 🔁 **Blender → Three.js pipeline** — the GLB is loaded via `GLTFLoader` and the embedded `AnimationMixer` clip played in a real-time loop — bridging Blender's offline render world with live WebGL
+- 🧊 **Built from scratch in Blender** — queen piece fully sculpted, UV-unwrapped, textured, and animated before export
+- 🔁 **Blender → Three.js pipeline** — GLB loaded via `GLTFLoader` with `AnimationMixer` loop and recalculated vertex normals
 
 ---
 
@@ -67,7 +67,7 @@ cd infinity-club
 npm install && npm run dev
 ```
 
-> Copy `.env.example` to `.env` and fill in `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` before starting.
+> Copy `.env.example` to `.env` and configure `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`.
 
 ---
 
